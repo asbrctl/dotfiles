@@ -1,0 +1,58 @@
+## NAME: ~/.screenrc
+## Getting rid of the vertical and horizontal bars
+rendition so =00
+#caption string "%{03} "
+
+startup_message off
+term "screen-256color"
+
+## start at window 1
+bind c screen 1
+bind ^c screen 1
+bind 0 select 10
+screen 1
+vbell off
+
+## clear the screen when quitting from Vim
+altscreen
+## max number of lines to store in buffer
+defscrollback 10000
+## detach session on hangup rather than terminate
+autodetach on
+### set the default program for new windows
+defshell -$SHELL
+## shell "/usr/bin/zsh"
+## unbind freeze terminal --> shift s
+bind s
+
+bindkey "^[[11~" select 1
+bindkey "^[[12~" select 2
+bindkey "^[[13~" select 3
+bindkey "^[[14~" select 4
+bindkey "^[[15~" select 5
+bindkey "^[[17~" select 6
+bindkey "^[[18~" select 7
+bindkey "^[[19~" select 8
+bindkey "^[[20~" select 9
+bindkey "^[[21~" select 10
+bindkey "^[[23~" select 11
+indkey "^[[24~" select 12
+##bindkey "^[[b" screen 1
+## F9  [new
+bindkey "^[[20~" screen 1
+## F5
+bindkey "^[[15~" prev
+##bindkey "^[[d" prev
+##bindkey "^[[c" next
+## F6
+bindkey "^[[17~" next
+
+## window list at the bottom. hostname, centered tabs and redmarked active windows:
+hardstatus on
+#hardstatus alwayslastline
+## bar status ontop
+hardstatus firstline
+hardstatus alwayslastline '%{= G}[ %{G}%H %{g}][%= %{= w}%?%-Lw%?%{= R}%n*%f %t%?%{= R}(%u)%?%{= w}%+Lw%?%= %{= g}][ %{y}Load: %l %{g}][%{B}%Y-%m-%d %{W}%c:%s %{g}]'
+
+## ctrl-a  shift-r
+bind R eval "source $HOME/.screenrc" "echo '.screenrc reloaded!'"
