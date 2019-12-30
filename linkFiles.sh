@@ -12,7 +12,7 @@ if [ -d "$DOTFILEDIR" ]; then
   ln -sfn "${DOTFILEDIR}"/profile "$HOME/.profile"
   
   ## bash link
-  ln -sfn "${DOTFILEDIR}"/bash_profile"$HOME/.bash_profile"
+  ln -sfn "${DOTFILEDIR}"/bash_profile "$HOME/.bash_profile"
 
   ## vim link
   ln -sfn "${DOTFILEDIR}"/vimrc "$HOME/.vimrc"
