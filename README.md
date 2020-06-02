@@ -11,6 +11,6 @@ current link files:
  - ~/.screenrc
  - ~/.vimrc
  - ~/.tmux.conf
- - ~/tmux/t1-fwd 
+ - tmux/t1-fwd 
 
 After cloned the repository run linkFiles.sh
