@@ -1,0 +1,10 @@
+#!/bin/sh
+
+neww -n fwd
+
+selectp -t 1
+splitw -v -p 30
+
+send-keys -t 2.1 'watch -n 2 'iptables -nvL FORWARD --line-numbers'
+send-keys -t 2.2 'ip a | grep "inet "'
+

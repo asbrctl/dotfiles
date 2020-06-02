@@ -1,0 +1,15 @@
+#FNAME: bashrc
+if [ -f /etc/bash_completion ]; then
+    source /etc/bash_completion
+fi
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+export HISTCONTROL=ignoredups:erasedups
+## bash options
+shopt -s cdspell
+## shopt  show options
+shopt -s autocd
+

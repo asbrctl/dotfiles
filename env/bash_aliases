@@ -1,0 +1,15 @@
+#FNAME: bash_aliases
+
+## walking the path
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias c='clear'
+
+## tmux
+alias t1='tmux  new -s'
+alias t2='tmux  ls'
+alias t3='tmux attach -t'
+TMX=$HOME/dotfiles/tmux/
+alias x1='tmux new -s 1 "tmux source-file $TMX/t1-fwd"'

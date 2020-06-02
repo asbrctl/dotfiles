@@ -1,0 +1,11 @@
+#FNAME: .bash_profile
+## load .profile
+if [ -f ~/.profile ]; then
+  . ~/.profile
+fi
+# load .bashrc
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi
+
+export PATH="$HOME/.cargo/bin:$PATH"
