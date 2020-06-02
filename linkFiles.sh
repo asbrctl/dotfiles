@@ -15,7 +15,7 @@ if [ -d "$DOTFILEDIR" ]; then
   ## bash link
   ln -sfn "${DOTFILEENV}"/bash_profile "$HOME/.bash_profile"
   ln -sfn "${DOTFILEENV}"/bashrc "$HOME/.bashrc"
-  ln -sfn "${DOTFILEENV}"/bash_aliases"$HOME/.bash_aliases"
+  ln -sfn "${DOTFILEENV}"/bash_aliases "$HOME/.bash_aliases"
 
   ## vim link
   ln -sfn "${DOTFILEDIR}"/vimrc "$HOME/.vimrc"
