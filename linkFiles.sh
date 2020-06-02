@@ -10,7 +10,7 @@ if [ -d "$DOTFILEDIR" ]; then
 
   ## profile link
   ln -sfn "${DOTFILEDIR}"/profile "$HOME/.profile"
-  
+
   ## bash link
   ln -sfn "${DOTFILEDIR}"/bash_profile "$HOME/.bash_profile"
 
@@ -19,6 +19,9 @@ if [ -d "$DOTFILEDIR" ]; then
 
   ## screen link
   ln -sfn "${DOTFILEDIR}"/screenrc "$HOME"/.screenrc
+
+  ## tmux link
+  ln -sfn "${DOTFILEDIR}"/tmux.conf "$HOME"/.tmux.conf
 
 else
 
