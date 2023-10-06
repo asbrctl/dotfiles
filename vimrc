@@ -25,7 +25,7 @@ set background=dark
 set autoread      " auto refresh files
 " ## enable full/long shell autocomplete functions for completing
 " ## filenames
-set wildmode=longest,list
+set wildmode=longest,list,full
 
 set history=1000         " remember more commands and search history
 set undolevels=1000      " use many levels of undo
